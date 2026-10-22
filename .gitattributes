@@ -1,0 +1,5 @@
+# Preserve the exact benchmark bytes used by the checksum manifests on every OS.
+* text=auto eol=lf
+*.csv -text whitespace=cr-at-eol
+*.png binary
+*.ipynb text eol=lf

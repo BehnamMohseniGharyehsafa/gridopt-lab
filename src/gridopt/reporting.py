@@ -41,6 +41,7 @@ def style():
             "axes.facecolor": "white",
             "grid.alpha": 0.18,
             "svg.fonttype": "none",
+            "svg.hashsalt": "gridopt-lab",
             "savefig.facecolor": "white",
         }
     )
@@ -48,7 +49,13 @@ def style():
 
 def save(fig, folder: Path, name: str):
     fig.savefig(folder / f"{name}.png", dpi=170, bbox_inches="tight", pad_inches=0.25)
-    fig.savefig(folder / f"{name}.svg", bbox_inches="tight", pad_inches=0.25)
+    svg = folder / f"{name}.svg"
+    fig.savefig(svg, bbox_inches="tight", pad_inches=0.25, metadata={"Date": None})
+    svg.write_text(
+        "\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines()) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     plt.close(fig)
 
 

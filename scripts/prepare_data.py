@@ -109,7 +109,7 @@ def main() -> None:
         (raw / "upstream_README.md").read_text(encoding="utf-8").split("## DATA USE DISCLAIMER AGREEMENT")[1]
     )
     (ROOT / "data/LICENSE-RTS-GMLC.md").write_text(
-        "# DATA USE DISCLAIMER AGREEMENT\n" + notice + "\n", encoding="utf-8"
+        "# DATA USE DISCLAIMER AGREEMENT\n" + notice.rstrip() + "\n", encoding="utf-8"
     )
     manifest = {
         "selected_days": DAYS,
