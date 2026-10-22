@@ -1,0 +1,9 @@
+# Interpretation of the reference experiments
+
+CVaR dispatch reduced the sum of mean daily held-out reserve exceedances by 98.3% relative to zero-reserve dispatch across the included seasonal cases (13,581.4 to 236.7 MWh). Reserve procurement costs increased by $496,407 over the modeled operating days. Risk-neutral procurement produced 2,142.3 MWh on the same aggregate exceedance measure. On the common $50/MWh exceedance-price metric, CVaR's summed held-out proxy cost was $4,033,160, versus $3,870,274 for risk-neutral procurement. The lower tail risk therefore has a visible procurement-cost tradeoff in this run. These exceedances are a procurement-risk proxy; they are not measured blackouts.
+
+All screened DC-OPF objectives matched their full-limit counterparts within the experiment tolerance. Screened solves retained 0–5 of 120 line-limit pairs, and every final flow was checked against every rating. Constraint reduction alone does not establish a runtime advantage.
+
+UC schedules had a maximum reported relative MIP gap of 1.148%. 5 solves returned a validated incumbent at the time limit. Small cost differences between reserve policies should be interpreted alongside their solver bounds.
+
+At the assumed $75/t carbon price, planning built 0.0 MW solar, 0.0 MW wind and 2,864.6 MW gas, at an illustrative annual objective of $1.851 billion. Benders and extensive LP objectives agreed for every tested carbon price. The base result can favor gas because existing low-cost generation supplies much of the sampled energy and new capacity covers residual peaks. At $150/t, the build changed to 1,624.1 MW solar, 1,452.6 MW wind and 2,857.4 MW gas. Mean observed planning runtime was 2.48s for Benders and 0.26s for the extensive LP; decomposition was slower on this small benchmark. Four hand-selected days, simplified retirements, and mixed-vintage cost assumptions limit any investment interpretation.

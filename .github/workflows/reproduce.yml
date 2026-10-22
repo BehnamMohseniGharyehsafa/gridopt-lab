@@ -1,0 +1,27 @@
+name: Reproduce seasonal experiments
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python -m pip install --no-deps -e .
+      - run: gridopt validate
+      - run: python -m pytest -q
+      - run: gridopt run --output results/runs/reproduced
+      - run: gridopt report --input results/runs/reproduced
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seasonal-experiments-and-report
+          path: |
+            results/runs/reproduced/
+            docs/index.html
+            docs/assets/

@@ -1,0 +1,19 @@
+name: Research question or model improvement
+description: Propose a testable extension with a reference comparison.
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and hypothesis
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Baseline, data and evaluation protocol
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Expected limitations and correctness checks

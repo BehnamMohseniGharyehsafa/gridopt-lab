@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-10-22T09:32:23.278047+00:00",
+  "python": "3.13.15",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.3.3",
+  "scipy": "1.16.1",
+  "pandas": "2.3.3",
+  "solver": "HiGHS via scipy.optimize",
+  "quick": false,
+  "seed": "No random sampling; deterministic chronological protocol",
+  "training": "Previous 30 days, same hour, strictly before target day",
+  "ed_holdout": "Seven days after each operational date; fixed hyperparameters",
+  "alpha": 0.9,
+  "risk_weight_usd_mwh": 40,
+  "shortfall_proxy_usd_mwh": 50,
+  "uc_mip_relative_gap_target": 0.001,
+  "uc_time_limit_seconds": 45,
+  "uc_incumbent_policy": "Accept a validated feasible time-limit incumbent and report its actual gap",
+  "benders_relative_gap_target": 1e-07,
+  "source_commit": "3ece0d3725c844056132393ee252b3083dd4eab4",
+  "input_sha256": {
+    "data\\processed\\branches.csv": "b28a187f55c2de9e65c77ddbc02f345ce80880e9ad0c6977d94c62c8972d1e88",
+    "data\\processed\\buses.csv": "1312eb3dc43c47f0457455b363a3e5d1187930d359d1787d7173776c6d28d753",
+    "data\\processed\\generators.csv": "6eab4e2f70e0265e92ae1f26ab950c72c9024052f4e1fd9139f294eb33d22e87",
+    "data\\processed\\nodal.csv": "def91ef649c458f707ceea79b2911602cddac5590ceb8577eb17725f6a9679a5",
+    "data\\processed\\profiles.csv": "c5006f7660328464162eed32b331fbaebc91910bb34e3bbc2a5325f8698840cf"
+  },
+  "planning_config_sha256": "85e392ecb8adf8287e4ebb900a8627e07614852b11788ce845924fa1fb8d8e1e"
+}

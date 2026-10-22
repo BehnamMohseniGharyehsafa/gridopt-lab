@@ -1,0 +1,27 @@
+{
+  "selected_days": [
+    "2020-02-15",
+    "2020-05-15",
+    "2020-08-15",
+    "2020-11-15"
+  ],
+  "hourly_rows": 8784,
+  "thermal_generators": 73,
+  "pv_nameplate_mw": 1554.5,
+  "wind_nameplate_mw": 2507.9,
+  "buses": 73,
+  "ac_branches": 120,
+  "base_mva": 100,
+  "excluded_assets": [
+    "CSP (thermal storage model omitted)",
+    "battery storage",
+    "synchronous condensers"
+  ],
+  "files": {
+    "branches.csv": "b28a187f55c2de9e65c77ddbc02f345ce80880e9ad0c6977d94c62c8972d1e88",
+    "buses.csv": "1312eb3dc43c47f0457455b363a3e5d1187930d359d1787d7173776c6d28d753",
+    "generators.csv": "6eab4e2f70e0265e92ae1f26ab950c72c9024052f4e1fd9139f294eb33d22e87",
+    "nodal.csv": "def91ef649c458f707ceea79b2911602cddac5590ceb8577eb17725f6a9679a5",
+    "profiles.csv": "c5006f7660328464162eed32b331fbaebc91910bb34e3bbc2a5325f8698840cf"
+  }
+}

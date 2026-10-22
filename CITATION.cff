@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this software and the original RTS-GMLC dataset if you use this work."
+title: "GridOpt Lab: Development of Power System Optimization Algorithms"
+type: software
+authors:
+  - family-names: Mohseni Gharyehsafa
+    given-names: Behnam
+version: 0.1.0
+date-released: 2026-10-22
+license: MIT
+url: "https://github.com/BehnamMohseniGharyehsafa/gridopt-lab"
+repository-code: "https://github.com/BehnamMohseniGharyehsafa/gridopt-lab"
+keywords:
+  - economic dispatch
+  - unit commitment
+  - optimal power flow
+  - capacity expansion
+  - Benders decomposition
+  - RTS-GMLC

@@ -1,0 +1,19 @@
+{
+  "cost_source": "https://www.eia.gov/electricity/generatorcosts/",
+  "cost_source_vintage": "2024 installations; accessed 2026-10-22",
+  "overnight_usd_per_kw": {"solar": 1865, "wind": 1882, "gas": 841},
+  "fixed_om_usd_per_kw_year": {"solar": 15, "wind": 40, "gas": 15},
+  "discount_rate": 0.07,
+  "lifetime_years": 30,
+  "new_gas_variable_usd_per_mwh": 65,
+  "co2_tonnes_per_mwh": {"Coal": 0.95, "NG": 0.4, "Oil": 0.75, "Nuclear": 0},
+  "carbon_usd_per_tonne": 75,
+  "existing_capacity_fraction": 0.6,
+  "load_multipliers": [1.1, 1.25, 1.4],
+  "probabilities": [0.25, 0.5, 0.25],
+  "candidate_max_mw": [4000, 4000, 4000],
+  "representative_days": ["2020-02-15", "2020-05-15", "2020-08-15", "2020-11-15"],
+  "days_per_representative_day": 91.25,
+  "unserved_usd_per_mwh": 10000,
+  "notes": "Only overnight costs are observed EIA values. Financing, fixed O&M, carbon policy, emissions factors, gas variable cost, retirements, bounds, growth and equal day weights are explicit modeling assumptions. Mixed-vintage illustrative dollars, no inflation correction or tax credits. Four hand-selected days are not a validated annual resource-adequacy sample."
+}
